@@ -20,12 +20,9 @@ class AdminPolicy
     //     //
     // }
 
-
-
     public function viewAdmin(AdminModel $admin){
         return $admin->role = 'superAdmin';
     }
-
 
     public function createAdmin(AdminModel $admin){
         return $admin->role = 'superAdmin';

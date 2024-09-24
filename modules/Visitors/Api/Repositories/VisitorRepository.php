@@ -37,11 +37,9 @@ class VisitorRepository
 
     public function returnVisits()
     {
-
         $data = VisitsModel::with(['resident', 'visitor'])
         ->orderBy('created_at', 'desc')
         ->paginate(10);
-
         return $this->dataResponse($data);
     }
 
